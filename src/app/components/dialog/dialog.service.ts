@@ -14,8 +14,8 @@ import { DialogComponent } from './dialog.component';
 import { DialogConfig } from '@dialog/dialog-config';
 import { DialogRef } from '@dialog/dialog-ref';
 
-export const DIALOG_CONFIG_TOKEN = new InjectionToken<any>('dialog-config');
-export const DIALOG_REF_TOKEN = new InjectionToken<any>('dialog-ref');
+export const DIALOG_CONFIG_TOKEN = new InjectionToken<Record<string, unknown>>('dialog-config');
+export const DIALOG_REF_TOKEN = new InjectionToken<DialogRef>('dialog-ref');
 
 @Injectable()
 export class DialogService {
