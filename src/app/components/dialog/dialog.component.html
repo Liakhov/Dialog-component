@@ -1,0 +1,8 @@
+<div
+  class="flex justify-center items-center fixed inset-0 bg-black bg-opacity-40"
+  (click)="onBackdropClick()"
+>
+  <div (click)="onDialogClick($event)">
+    <ng-template #dynamic/>
+  </div>
+</div>
