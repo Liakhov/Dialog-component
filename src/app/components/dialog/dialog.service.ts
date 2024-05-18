@@ -26,7 +26,7 @@ export class DialogService {
     private injector: Injector
   ) {}
 
-  public open<C>(componentType: Type<C>, config: DialogConfig): DialogRef {
+  public open<C>(componentType: Type<C>, config: DialogConfig = {}): DialogRef {
     const dialogRef = this.appendDialogComponentToBody(config);
     this.dialogComponentRef.instance.dynamicComponent = componentType;
     this.observeClosingDialog(dialogRef);

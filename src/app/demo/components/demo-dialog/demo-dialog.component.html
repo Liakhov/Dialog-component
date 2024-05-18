@@ -1,0 +1,36 @@
+<div class="py-5 px-6 bg-white rounded-lg shadow">
+  <div class="flex items-center justify-between mb-4">
+    <h3 class="text-lg font-semibold text-gray-900">Modal Title</h3>
+    <button
+      type="button"
+      class="flex justify-center items-center w-8 h-8 text-gray-400 hover:text-gray-800"
+      (click)="onClose()"
+    >
+      <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"></path>
+      </svg>
+    </button>
+  </div>
+
+  <div class="mb-8">
+    <p>This is placeholder text. Replace it with your own content.</p>
+  </div>
+
+  <div class="flex flex-col-reverse gap-2 sm:flex-row sm:justify-end">
+    <button
+      type="button"
+      class="px-5 py-2.5 text-sm font-medium text-center text-gray-900 rounded-lg bg-white hover:bg-gray-100 border border-gray-200"
+      (click)="onClose()"
+    >
+      Cancel
+    </button>
+    <button
+      type="button"
+      class="px-5 py-2.5 text-sm font-medium text-center text-white rounded-lg bg-gray-900 hover:bg-gray-800 border border-gray-900"
+      (click)="onConfirm()"
+    >
+      Confirm
+    </button>
+  </div>
+</div>
