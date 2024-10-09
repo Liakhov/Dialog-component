@@ -1,6 +1,6 @@
 import { Component, HostListener, inject } from '@angular/core';
 
-import { DIALOG_REF_TOKEN } from "@dialog/dialog.service";
+import { DIALOG_REF_TOKEN } from '@dialog/dialog.service';
 
 @Component({
   selector: 'app-demo-dialog',

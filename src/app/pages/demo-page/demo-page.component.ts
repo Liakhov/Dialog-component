@@ -1,15 +1,15 @@
 import { Component, inject } from '@angular/core';
 
-import { DemoDialogComponent } from "../../components/demo-dialog/demo-dialog.component";
-import { DialogService } from "@dialog/dialog.service";
+import { DemoDialogComponent } from '../../components/demo-dialog/demo-dialog.component';
+import { DialogService } from '@dialog/dialog.service';
 
 @Component({
-  selector: 'app-dialog-demo-page',
+  selector: 'app-demo-page',
   standalone: true,
-  templateUrl: './dialog-demo-page.component.html',
+  templateUrl: './demo-page.component.html',
   providers: [DialogService]
 })
-export class DialogDemoPageComponent {
+export class DemoPageComponent {
   private dialogService = inject(DialogService);
 
   public onOpenDialog(): void {
